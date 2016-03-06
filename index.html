@@ -3,8 +3,31 @@
   <head>
     <meta charset="utf-8">
     <title>Charles Lane</title>
+      <!-- css libraries -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css" media="screen" title="no title" charset="utf-8">
+      <!-- bibliotecas caseras -->
+      <link rel="stylesheet" href="./directives/topSection/topSection.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="./directives/loadingAn/loading.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="./directives/midSection/midSection.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="./directives/boSection/boSection.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="./css/styles.css" media="screen" title="no title" charset="utf-8">
   </head>
-  <body>
-    <img src="https://cdnd.icons8.com/wp-content/uploads/2015/06/Website-Under-Construction.jpg" alt="" />
+  <body ng-app = 'main'>
+      <div ui-view></div>
+      <!-- dependencies -->
+      <script src="./node_modules/angular/angular.js" charset="utf-8"></script>
+      <script src="./node_modules/underscore/underscore.js" charset="utf-8"></script>
+      <script src="./node_modules/jquery/dist/jquery.js" charset="utf-8"></script>
+      <script src="./node_modules/angular-route/angular-route.js" charset="utf-8"></script>
+      <script src="./node_modules/angular-ui-router/release/angular-ui-router.js" charset="utf-8"></script>
+      <script src="./node_modules/bootstrap/dist/js/bootstrap.js" charset="utf-8"></script>
+      <!-- modules and contollers -->
+      <script src="./main/main.module.js" charset="utf-8"></script>
+      <script src="./main/main.controller.js" charset="utf-8"></script>
+      <!-- directives -->
+      <script src="./directives/loadingAn/loading.js" charset="utf-8"></script>
+      <script src="./directives/topSection/topSection.js" charset="utf-8"></script>
+      <script src="./directives/midSection/midSection.js" charset="utf-8"></script>
+      <script src="./directives/boSection/boSection.js" charset="utf-8"></script>
   </body>
 </html>

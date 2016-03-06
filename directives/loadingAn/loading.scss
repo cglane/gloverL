@@ -1,0 +1,109 @@
+.jumbalaya{
+  background-color: rgba(1, 1, 1, .7);
+  margin: auto;
+  transition: 1s;
+  #name-logo{
+    position: absolute;
+    left: 20px;
+    .letter-two{
+      display: inline-block;
+      transition: 1s;
+      transform:rotate(180deg);
+      -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+      color: red;
+    }
+  }
+  div{
+    width: 20%;
+    height: 300px;
+    margin-top: 200px;
+    display: inline-block;
+  }
+  #my-name-insert{
+    transition: 1s;
+    vertical-align: top;
+    border: solid red 10px;
+    position: absolute;
+    left: 25%;
+    font-size: 10em;
+    height: 100px;
+    p{
+      vertical-align: top;
+      width: 90%;
+      height: 90%;
+      margin: auto;
+      color:green;
+    }
+    &:hover{
+      transform: rotate(7deg);
+      -webkit-transform: rotate(7deg);
+    -moz-transform: rotate(7deg);
+    -o-transform: rotate(7deg);
+    -ms-transform: rotate(7deg);
+    }
+  }
+  #repeat-icon{
+    transition: 1s;
+    position: absolute;
+    left: 55%;
+    top: 450px;
+    font-size: 2em;
+    opacity: 0;
+  }
+  #insert{
+    position: absolute;
+    left: 50%;
+    border: solid black 2px;
+    transition: 2s;
+    &:hover{
+      transform: rotate(-5deg);
+      -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    }
+  }
+  p{
+    transition: 2s;
+    position: absolute;
+    top: 100px;
+    font-family: 'Goudy Old Style', Garamond, 'Big Caslon', 'Times New Roman', serif;
+    width: 90%;
+	   font-size: 2.8em;
+	    font-style: normal;
+	     font-variant: normal;
+	      font-weight: 400;
+	       line-height: 30px;
+  }
+  .next-page{
+    position: fixed;
+    right: 20px;
+    top: 300px;
+    &:hover{
+      span{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+      }
+      h1{
+        opacity: 1;
+      }
+
+    }
+    span{
+      transition: 1s;
+      border: solid red 2px;
+      padding: 5%;
+      font-size: 20px;
+    }
+    h1{
+      transition: 1s;
+      opacity: 0;
+    }
+  }
+}
