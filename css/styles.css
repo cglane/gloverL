@@ -1,22 +1,18 @@
-.full-page-section {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border: solid black 1px; }
-
-#top-section {
-  top: 0px;
-  z-index: 2; }
-
-#middle-section {
-  top: 120%;
-  height: 100%;
-  z-index: 2; }
-
-#picture-fixed-one {
-  position: fixed;
+.background-images .one {
   width: 100%;
   height: 800px;
-  top: 200px;
-  background-color: red;
-  z-index: 1; }
+  position: relative;
+  background-color: red; }
+  .background-images .one:after {
+    position: relative;
+    overflow: visible;
+    width: 100%;
+    height: 450px;
+    background-color: #fafafa;
+    z-index: 5;
+    -webkit-transform: skewY(-2deg);
+    -moz-transform: skewY(-2deg);
+    -ms-transform: skewY(-2deg);
+    -o-transform: skewY(-2deg);
+    transform: skewY(-2deg);
+    -webkit-backface-visibility: hidden; }

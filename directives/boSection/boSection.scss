@@ -1,0 +1,44 @@
+.wrapper-bottom{
+  width: 100%;
+  height: 100%;
+  section{
+    width: 30%;
+    height: 60%;
+    display: inline-block;
+    background: none;
+    overflow: hidden;
+    color: black;
+    margin-top: 10%;
+    h1{
+      width: 90%;
+      text-align: center;
+    }
+    p{
+      width: 60%;
+      margin-left:20%;
+      margin-top: 10%;
+      line-height: 2em;
+      text-align: center;
+      color:rgb(50, 10, 10);
+      &:hover{
+        img{
+          background-color: rgb(25, 250, 250);
+        }
+      }
+      a{
+        width: 40%;
+        display: inline-block;
+        color:rgb(50, 10, 10);
+        text-decoration: none;
+        img{
+          width: 32px;
+        }
+      }
+    }
+  }
+  .contact{
+    border-left: solid black 2px;
+    border-right: solid black 2px;
+  }
+
+}

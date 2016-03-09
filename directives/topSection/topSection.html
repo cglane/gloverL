@@ -1,18 +1,64 @@
-<div class="about-me">
-  <div class="inner-div">
-    <ul>
-      <li  class = 'one'>
-          <span class = 'glyphicon glyphicon-user'></span>
-          <h3>About Me</h3>
-      </li>
-      <li class = 'two'>
-        <span class = 'glyphicon glyphicon-book'></span>
-        <h3>Portfolio</h3>
-      </li>
-      <li class = 'three'>
-        <span class = 'glyphicon glyphicon-phone'></span>
-        <h3>Contact</h3>
-      </li>
-    </ul>
-  </div>
+<div class="top-wrapper">
+  <section class = 'top-section'>
+    <a href="../../pics/resume.pdf" download>
+    <span class = 'glyphicon glyphicon-download'>
+      <h1>Download Resume <small></small></h1>
+    </span>
+  </a>
+  </section>
+  <section class = 'middle-section'>
+    <div class="left-div-middle">
+      <h1>Charles Lane <small></small></h1>
+      <p>
+        <ul>
+        <li>AngularJs</li>
+        <li>JQuery</li>
+        <li>HTML5</li>
+        <li>MongoDB</li>
+        <li>NodeJs</li>
+      </ul>
+      </p>
+    </div>
+    <div class="right-div-middle">
+      <!-- <h1>Web Developer <small></small></h1>
+      <p>
+        Looking for a Front End position in the Charleston Area
+      </p> -->
+    </div>
+  </section>
+  <section class = 'bottom-section'>
+    <div ng-mouseover = "showContent(0)" class="left-div-bottom">
+      <h1>Web Developer <small> UI/UX focus</small></h1>
+      <p id = "bottom-content">
+        {{bottomContent}}
+      </p>
+    </div>
+    <div class="right-div-bottom">
+      <div ng-mouseover = "showContent(1)" class="life-one">
+        <h1>07-11 <small></small></h1>
+        <p>
+          Clemson University
+        </p>
+      </div>
+      <div ng-mouseover = "showContent(2)" class="life-two">
+        <h1>11-13 <small></small></h1>
+        <p>
+          China
+        </p>
+      </div>
+      <div ng-mouseover = "showContent(3)" class="life-three">
+        <h1>14-15 <small></small></h1>
+        <p>
+          Columbia, SC
+        </p>
+      </div>
+      <div ng-mouseover = "showContent(4)" class="life-four">
+        <h1>15-16 <small></small></h1>
+        <p>
+          Charleston, SC
+        </p>
+      </div>
+      </div>
+    </div>
+  </section>
 </div>

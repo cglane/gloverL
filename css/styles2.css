@@ -1,0 +1,160 @@
+.background-images .one {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  background-color: none; }
+  .background-images .one:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -100px;
+    overflow: visible;
+    width: 100%;
+    height: 800px;
+    background-color: grey;
+    z-index: 1;
+    -webkit-transform: skewY(4deg);
+    -moz-transform: skewY(4deg);
+    -ms-transform: skewY(4deg);
+    -o-transform: skewY(4deg);
+    transform: skewY(4deg);
+    -webkit-backface-visibility: hidden; }
+
+.background-images .canvas-two {
+  z-index: -2;
+  width: 100%;
+  height: 400px;
+  background-image: url("../../pics/swirl_pattern/swirl_pattern.png");
+  margin-top: 50px; }
+
+.background-images .three {
+  width: 100%;
+  height: 1200px;
+  background-color: #f3f3f3; }
+  .background-images .three:before {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    overflow: visible;
+    margin-top: -100px;
+    width: 100%;
+    height: 300px;
+    background-color: #f3f3f3;
+    -webkit-transform: skewY(4deg);
+    -moz-transform: skewY(4deg);
+    -ms-transform: skewY(4deg);
+    -o-transform: skewY(4deg);
+    transform: skewY(4deg);
+    -webkit-backface-visibility: hidden; }
+
+.background-images .four {
+  width: 100%;
+  height: 400px;
+  background-image: url("../../pics/wall2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .background-images .four #inner-div-four {
+    width: 100%;
+    height: 100%;
+    opacity: .7;
+    background-image: url("../../pics/ignasi_pattern_s/ignasi_pattern_s.png");
+    background-size: cover; }
+
+.background-images .five {
+  width: 100%;
+  height: 500px;
+  background-color: white; }
+
+.background-images .six {
+  width: 100%;
+  height: 50px;
+  background-image: url("../../pics/dark_embroidery/dark_embroidery.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.absolute-one {
+  width: 80%;
+  height: 180%;
+  background-color: black;
+  position: absolute;
+  z-index: 2;
+  left: 10%;
+  top: 10%; }
+
+.absolute-two {
+  width: 80%;
+  height: 40%;
+  left: 10%;
+  position: absolute;
+  background-color: white;
+  top: 240%;
+  z-index: 4; }
+
+.absolute-three {
+  width: 80%;
+  height: 99%;
+  position: absolute;
+  background: white;
+  top: 280%;
+  left: 10%;
+  z-index: 2; }
+
+#return-top {
+  border: solid red 1px;
+  padding: 5px;
+  font-size: 20px;
+  position: fixed;
+  z-index: 3;
+  opacity: 0;
+  right: 5px;
+  top: 90%;
+  -webkit-transition: transform 500ms;
+  -moz-transition: transform 500ms;
+  -ms-transition: transform 500ms;
+  -o-transition: transform 500ms;
+  transition: transform 500ms; }
+  #return-top:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2); }
+
+.popping-lights {
+  position: absolute;
+  background: none;
+  top: 0;
+  width: 100%;
+  height: 800px;
+  z-index: 1; }
+  .popping-lights span {
+    width: 2px;
+    height: 2px;
+    border-radius: 100%;
+    background-color: red;
+    position: absolute;
+    z-index: 3;
+    -webkit-transition: transform 500ms;
+    -moz-transition: transform 500ms;
+    -ms-transition: transform 500ms;
+    -o-transition: transform 500ms;
+    transition: transform 500ms; }
+  .popping-lights .one-light {
+    top: 2%;
+    right: 80%; }
+  .popping-lights .two-light {
+    top: 20%; }
+  .popping-lights .three-light {
+    right: 5%;
+    top: 40%; }
+  .popping-lights .four-light {
+    left: 2%;
+    top: 60%; }
+
+.expand-scale {
+  -webkit-transform: scale(25);
+  -moz-transform: scale(25);
+  -ms-transform: scale(25);
+  -o-transform: scale(25);
+  transform: scale(25); }

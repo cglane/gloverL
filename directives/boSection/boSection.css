@@ -1,0 +1,33 @@
+.wrapper-bottom {
+  width: 100%;
+  height: 100%; }
+  .wrapper-bottom section {
+    width: 30%;
+    height: 60%;
+    display: inline-block;
+    background: none;
+    overflow: hidden;
+    color: black;
+    margin-top: 10%; }
+    .wrapper-bottom section h1 {
+      width: 90%;
+      text-align: center; }
+    .wrapper-bottom section p {
+      width: 60%;
+      margin-left: 20%;
+      margin-top: 10%;
+      line-height: 2em;
+      text-align: center;
+      color: #320a0a; }
+      .wrapper-bottom section p:hover img {
+        background-color: #19fafa; }
+      .wrapper-bottom section p a {
+        width: 40%;
+        display: inline-block;
+        color: #320a0a;
+        text-decoration: none; }
+        .wrapper-bottom section p a img {
+          width: 32px; }
+  .wrapper-bottom .contact {
+    border-left: solid black 2px;
+    border-right: solid black 2px; }

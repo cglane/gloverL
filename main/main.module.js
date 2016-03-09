@@ -34,7 +34,7 @@
           .state('main', {
               url: '/main',
               controller:'MainController',
-              templateUrl: 'main/views/main.html'
+              templateUrl: 'main/views/three.html'
           })
     //       .state('contact', {
     //           url: '/contact',
