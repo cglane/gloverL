@@ -9,7 +9,7 @@ angular
       $('#top-section').stop().animate({
         backgroundSize:'100%'
       },500,"linear")
-    }, 2000);
+    }, 4000);
     var splitPercent = function(string,sign){
       var newArray = string.split('%');
       console.log(sign,'sign')
