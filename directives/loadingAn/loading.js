@@ -51,8 +51,10 @@
                   curStr = curStr + word[curIn];
                   curIn++;
                 }
-              }, 300);
+              },500);
             }
+
+
             //timeout animation
             var textArray = ['Web Developer','AngularJs','HTML5', 'CSS3', 'Bootstrap', 'jQuery'];
             var tar = $('#insert');
@@ -77,6 +79,7 @@
               var e = setTimeout(function () {
                 slideUp('five');
                 $(tar).append('<p id = six>'+ textArray[5]+ '</p>');
+                scope.skipFun();
               }, 11000);
               var f = setTimeout(function () {
                 $('#name-logo .letter-two').css('transform','rotate(0deg)')

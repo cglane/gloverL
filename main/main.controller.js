@@ -3,11 +3,13 @@
 
 angular
   .module('main')
-  .controller('MainController',function($interval,$scope,$state,$timeout){
+  .controller('MainController',function($interval,$scope,$state,$timeout,$location){
     var lastScroll = 0;
-    // var texture = $('#inner-div-four');
-    // var canvas = $('.canvas-two');
-    //make background of canvas element move with scroll
+    setTimeout(function () {
+      $('#top-section').stop().animate({
+        backgroundSize:'100%'
+      },500,"linear")
+    }, 2000);
     var splitPercent = function(string,sign){
       var newArray = string.split('%');
       console.log(sign,'sign')
@@ -23,9 +25,15 @@ angular
   $(window).on('scroll',function(el){
     var currentScroll = $(window).scrollTop();
     console.log(currentScroll)
+      $('#top-section').stop().animate({
+        backgroundSize:'100%'
+      },500,"linear")
+
     if(currentScroll > 40){
+      $('#nav-bar').css('top','-100px')
       $('#return-top').css('opacity',1)
     }else{
+      $('#nav-bar').css('top','0px')
       $('#return-top').css('opacity',0)
 
     }
@@ -59,22 +67,35 @@ angular
           lastScroll = currentScroll;
     }
   })
-  var animateLight= function(){
-    var colors = ['green','yellow','orange','blue'];
-    var lights = ['one-light','two-light','three-light','four-light'];
-    var randomNumber = Math.floor(Math.random() * (lights.length - 0)) + 0;
-    $('.'+lights[randomNumber]).addClass('expand-scale');
-    $('.'+lights[randomNumber]).css('background-color',colors[randomNumber]);
-      setTimeout(function () {
-        $('.'+lights[randomNumber]).toggleClass('expand-scale');
-      }, 500);
-  }
-  setInterval(function () {
-    animateLight();
-  }, 3000);
+  // var animateLight= function(){
+  //   var colors = ['rgb(250,245,250)','yellow','orange','blue'];
+  //   var lights = ['one-light','two-light','three-light','four-light'];
+  //   var randomNumber = Math.floor(Math.random() * (lights.length - 0)) + 0;
+  //   $('.'+lights[randomNumber]).addClass('expand-scale');
+  //   $('.'+lights[randomNumber]).css('background-color',colors[randomNumber]);
+  //     setTimeout(function () {
+  //       $('.'+lights[randomNumber]).toggleClass('expand-scale');
+  //     }, 500);
+  // }
+  // setInterval(function () {
+  //   animateLight();
+  // }, 3000);
   $scope.returnTop = function(){
     console.log('hello')
     $('body').stop().animate({scrollTop:0}, '500');
+  }
+  $scope.goTo = function(arg){
+    if(arg === 'landing'){
+      $location.path("#/")
+    }
+    if(arg === 'porfolio'){
+      $('body').stop().animate({scrollTop:1500}, '500');
+    }
+    if(arg === 'contact'){
+      $('body').stop().animate({scrollTop:3000}, '500');
+    }
+
+
   }
   });
 })();
